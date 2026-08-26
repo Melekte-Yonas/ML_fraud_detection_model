@@ -73,8 +73,8 @@ ct = ColumnTransformer(
     remainder = "passthrough"
 )
 
-#created a pipeline that includes the ct preprocessing and the statistical model I used, "Random forest regression"
-#I tried logistic regression but yielded worse results than random forest regression.
+#created a pipeline that includes the ct preprocessing and the statistical model I used, "Random forest classifier"
+#I tried logistic regression but yielded worse results than random forest classifier.
 pipe = Pipeline([
     ("preprocessing", ct),
     ("model", RandomForestClassifier())
