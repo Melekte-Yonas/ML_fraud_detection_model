@@ -1,16 +1,16 @@
-#Machine Learning Fraud Detection Model
+# Machine Learning Fraud Detection Model
 
-##Project overview
+## Project overview
 The dataset was 100,000 rows 5.5% fraud rate. I split the data in 80/20 split. 80 for training and 20 for testing. This project was about 
 creating a machine learning model that detects financial fraud. It classifies each transaction as fraud or not fraud. I first cleaned
 the sample data to help the model make the best results it can. The model I used was random forest classifier. From all the available
 classification models this one yielded the best results. 
 
-##Motivation
+## Motivation
 Fraud is one of the biggest things that affects banks profit and reputability. When customers get scammed they lose trust in their banks
 which can lead to churning. By creating a successful fraud model companies can avert these scenarios and keep their loyal customers.
 
-##Methodology
+## Methodology
 1. I first went through all the columns of each transaction to see the best indication of fraud and created a refined dataset for the model.
   - I created two functions:
     - 1st function: It found the mean fraud rate of each column using its column's categories.
