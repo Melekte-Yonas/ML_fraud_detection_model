@@ -54,6 +54,6 @@ which can lead to churning. By creating a successful fraud model companies can a
    File paths work for anyone, just run it as they are.
 
 ## Future improvements:
-- choose better learning models to find more nuance indicators.
+- choose better learning models to find more nuanced indicators.
 
 
