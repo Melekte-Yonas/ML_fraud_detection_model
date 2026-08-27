@@ -37,7 +37,7 @@ which can lead to churning. By creating a successful fraud model companies can a
 ![International vs non-International](ML_fraud_detection_model/Visualizations/International.v.Non-International.png)
 ![Failed attempts chart](ML_fraud_detection_model/Visualizations/failed_attempts.png)
 
-  - **Having international compared to non international transactions has more than double the fraud rate and as you have more failed attempts when trying to login to a customer account the more likely that transaction was fraud.** This data can help companies make their fraud detection model to match with the findings of data.
+- **Having international compared to non international transactions has more than double the fraud rate and as you have more failed attempts when trying to login to a customer account the more likely that transaction was fraud.** This data can help companies make their fraud detection model to match with the findings of data.
 
 ## Technical skills used: 
 - Python: programming language used
