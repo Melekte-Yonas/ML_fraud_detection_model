@@ -49,11 +49,11 @@ which can lead to churning. By creating a successful fraud model companies can a
 - pathlib: For file management
 
 ## How to Run:
-install python libraries: "pip install pandas numpy matplotlib seaborn scikit-learn"
-Run EDA.py first, then fraud_model.py, lastly Visuals_scr.py
-File paths work for anyone, just run it as they are.
+- install python libraries: "pip install pandas numpy matplotlib seaborn scikit-learn"
+- Run EDA.py first, then fraud_model.py, lastly Visuals_scr.py
+   File paths work for anyone, just run it as they are.
 
 ## Future improvements:
-explore XGBoost or neural networks which handle class imbalance better than Random Forest.
+- explore XGBoost or neural networks which handle class imbalance better than Random Forest.
 
 
