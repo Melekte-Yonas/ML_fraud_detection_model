@@ -24,5 +24,34 @@ which can lead to churning. By creating a successful fraud model companies can a
       columns so the model can understand those categories and not skew the numerical ones.
     - 4th: I then trained the 80 percent with my random forest classifier pipeline and used GridSearchCV to find the best parameters
       and tested the model with the 20%.
-    - 5th: I also made the threshold 45% percent instead of 50% for the best results since catching fraud matters more to a bank
-      than minimizing false alarms, even if it leads to some false alarms.
+    - 5th: I also made the threshold 45% instead of 50% for the best results since catching fraud matters more to a bank
+      than minimizing false alarms, even if it leads to some false alarms though I did try everything between this
+      yielded the best results.
+
+## Results
+*81% recall and 8% precision*
+- This means it catches 81% of those 5% which is recall but it has many transactions where it mistakenly identifies it as fraud which is the precision.
+- I have a 2x2 confusion matrix to map this finding, precision versus recall graph, and have two of the best fraud indicating columns even though the dataset did not have the best fraud indicators.
+![2x2 confusion matrix](ML_fraud_detection_model/Visualizations/confusion_matrix.png)
+![Precision vs Recall](ML_fraud_detection_model/Visualizations/Precision.V.Recall.png)
+![International vs non-International](ML_fraud_detection_model/Visualizations/International.v.Non-International.png)
+![Failed attempts chart](ML_fraud_detection_model/Visualizations/failed_attempts.png)
+
+## Technical skills used: 
+- Python: programming language used
+- Pandas: For EDA and data cleaning
+- numpy: For numerical arrays used for visualizations
+- scikit-learn: For machine learning model
+- matplotlib: For bar charts
+- seaborn: for 2x2 confusion matrix
+- pathlib: For file management
+
+## How to Run:
+install python libraries: "pip install pandas numpy matplotlib seaborn scikit-learn"
+Run EDA.py first, then fraud_model.py, lastly Visuals_scr.py
+File paths work for anyone, just run it as they are.
+
+## Future improvements:
+explore XGBoost or neural networks which handle class imbalance better than Random Forest.
+
+
