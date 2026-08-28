@@ -3,7 +3,7 @@
 ## Project overview
 The dataset was 100,000 rows 5.5% fraud rate. I split the data in 80/20 split. 80 for training and 20 for testing. This project was about 
 creating a machine learning model that detects financial fraud. It classifies each transaction as fraud or not fraud. I first cleaned
-the sample data to help the model make the best results it can. The model I used was random forest classifier. From all the available
+the sample data to help the model get the best results it can. The model I used was random forest classifier. From all the available
 classification models this one yielded the best results. 
 
 ## Motivation
