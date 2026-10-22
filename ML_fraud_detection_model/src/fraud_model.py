@@ -10,12 +10,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 #loaded the processed sample from the eda
-def load_data():
-    data_path = BASE_DIR / "data" / "processed" / "eda_cleaned_sample.csv"
-    df = pd.read_csv(data_path)
-    return df
-
-df = load_data()
+df = pd.read_csv(BASE_DIR / "Data" / "processed" / "eda_cleaned_sample.csv")
 
 #y is the result found from x which are all the indicator columns
 #both x and y are used to train and test
