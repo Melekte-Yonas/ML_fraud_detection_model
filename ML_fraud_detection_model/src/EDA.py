@@ -1,18 +1,10 @@
-#EDA Goal: Find best columns for fraud predictors and clean it
-#Dataset: Bank_fraud_dataset(100k rows)
-
 from pathlib import Path
 import pandas as pd
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 #loaded the data
-def load_data():
-    data_path = BASE_DIR / "Data" / "raw" / "Bank_fraud_dataset"
-    df = pd.read_csv(data_path)
-    return df
-
-df = load_data()
+df = pd.read_csv(BASE_DIR / "Data" / "raw" / "Bank_fraud_dataset")
 pd.set_option("display.max_columns", None)
 
 #I created these two function to find good indicators for fraud.
@@ -24,7 +16,7 @@ def mean1(df, column_name):
     return print(f"\n{df.groupby(column_name)["is_fraud"].mean()}")
 
 #This function splits the column's numbers into 4 categories based on its standard deviation and creates a new categorical column.
-#"min-25%", "25%-50%", "50%-75%", "75%-max" ---> then I used the first function to find the average fraud rate within each category.
+#"min-25%", "25%-50%", "50%-75%", "75%-max", then I used the first function to find the average fraud rate within each category.
 def bin_column(df, column_name):
     labels = ["min-25%", "25%-50%", "50%-75%", "75%-max"]
     bins = [df[column_name].quantile(0),
