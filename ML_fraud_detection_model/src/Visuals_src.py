@@ -8,19 +8,8 @@ from sklearn.metrics import confusion_matrix
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-def load_data():
-    data_path = BASE_DIR / "data" / "processed" / "results.csv"
-    df = pd.read_csv(data_path)
-    return df
-
-def load_data1():
-    data_path = BASE_DIR / "data" / "processed" / "best_indicators.csv"
-    df = pd.read_csv(data_path)
-    return df
-
-results = load_data()
-indicators = load_data1()
-
+results = pd.read_csv(BASE_DIR / "Data" / "processed" / "results.csv")
+indicators = pd.read_csv(BASE_DIR / "Data" / "processed" / "best_indicators.csv")
 
 
 #1st Graph: 2x2 Confusion matrix
